@@ -1,0 +1,1 @@
+You may open/run files, but do not move or delete them. However, you can copy "notepad2_4.2.25_x86.zip" in another directory and use it as you please.

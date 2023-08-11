@@ -1,0 +1,81 @@
+Contents:
+1. General information
+2. Basic tutorial
+3. Bugs and reports
+4. Words of advice
+5. Useful links
+
+
+
+1. General information
+
+The program includes, or will include in future updates:
+- basic mandatory variables, e.g. types of cards and effects,
+- optional variables, e.g. conditions and costs,
+- things that haven't been implemented yet (gray options).
+Some variables and/or options can be available only after a specific value or group of values is entered. This is to prevent the users from including invalid or unecessary stuff.
+
+Since version 0.3.4.0, the program includes a utility to edit the game's database easier. The great thing about it is that it's not tied to cards you make with the main program; you can add your own cards in the database too!
+You can start it from "Database" on the menu bar. However, It's not fully versatile; for this, it includes some information about its limitations.
+Simple and efficient, but it's not complete. For that, you can check out DataEditorX, an editor that gives full control over your target database.
+
+2. Basic tutorial
+
+There are 2 tabs. The first one includes a box for your card's ID (basically the script's name), which you can change manually or with the arrows, and some boxes that determine your card's overall type. Select the general type (e.g. Spell), then the sub-type (e.g. Normal).
+After you're done, the 2nd tab becomes available to use. You'll notice that there are very few options available. Depending what you choose, more variables will appear.
+
+1st Example:
+Let's say that you want to make a Normal Spell Card that targets a monster on the field, then destroys it. 
+Assuming you already picked "Spell" and "Normal" from Main tab:
+a) select "Destroy" from "Type of effect",
+b) check "Effect targets", 
+c) select "Monster" from "Card to affect",
+d) select "Both" from "Player to affect",
+e) make sure the "1" is checked from "No. of cards to affect",
+f) Click "Generate text/file".
+
+2nd Example:
+An Xyz Monster that makes you discard 1 card as a cost, then banish 1 card your opponent controls:
+a) select "Monster" from "Type of card",
+b) select "Xyz" from "Type of monster",
+c) select the monster's Level of your choice and "none" from "Requirements",
+d) ...and the procedure follows like before, except with the appropriate changes.
+
+If you don't need something, even if it's available to use, don't include it in the process. If possible, leave it in its default state.
+During the whole process, if anything goes wrong or is invalid, a respective error window will appear.
+If the file is created successfully (a message will appear), you can access it via "File/Open folder" in the menu or by opening the program's folder manually.
+
+NOTE: Even if you create the file, simply adding it in the Scripts folder of YGOPro won't make your cards work immediately. You need to add them to the database too, also inserting images for your cards helps immensely.
+The program includes a utility to add cards in the database. In any case, in the end are a few links to help you get started (i.e. to add images/edit the db manually/write your own scripts).
+
+
+
+3. Bugs and reports
+
+Even when undergoing testing, the program can naturally be prone to bugs or gaps or cards that don't work as expected. A well-organized report certainly helps, but it's important to keep in mind:
+- Sometimes it may not be the program's fault but rather certain choices you make.
+- Making cards doesn't mean slapping effects in and expecting them to work well.
+- A basic understanding of the game's rules and how effects should be written is important when making cards.
+
+The reports should include:
+- The intended effects,
+- All the selected choices.
+- If it's a problem about the database editor, write your report accordingly.
+
+
+
+4. Words of advice
+
+Script Generator YGO's purpose is "to make your life easier and to make basic, functioning cards". It will never be a complete program, also it doesn't replace the card scripters in any way. Time-wise, it does the job. Quality-wise,... that's another thing.
+If you're interested in writing or editing scripts yourself, I recommends that you rely less on the generated scripts and more on the existing ones with similar effects. Additionally, you can ask card for help or look at tutorials.
+
+
+
+5. Useful links
+
+To write, edit or just see your cards you need a text editor, e.g. Lua Edit or literally any text editor you're familiar with. A very good one is Notepad++ but there are others too. For your convenience, I added Notepad2 (which you can access from "File/Open Notepad2"). Basically, it's like Notepad but with more, professional tools.
+(NOTE: If you want to change the text's appearance in Notepad2, you can do it from "View" and select either "Syntax Scheme" or "2nd default Scheme".
+As for the card database handler, there are many free & simple solutions. One of them, SQLiteExpertPersonal, is included in the tutorials below. I've used both that and SQLiteDatabaseBrowser. Both do the job just fine.
+My program's utility can edit the database too, but that's the only thing it can do; you can't view it or do advanced editing in the database itself.
+
+You can find plenty of tutorials and/or videos explaining stuff; here are a handful ones:

@@ -1,0 +1,12 @@
+1. "Script Generator YGO.zip" contains the executable version of the project and the folder "sgfiles" that accompanies it and is highly adviced to keep the two paired.
+
+
+2. The executable file was made with PyInstaller and I followed the basic procedures. It is safe to use, but some AVs might think it's malicious (and maybe will delete it on the spot too). If that's the case, you need to add the program to the AVs' white list.
+
+
+3. For some reason, the window and widgets look a bit off-place; it happens even when I run the .exe file which is supposed to keep the registered information intact. Normally they should look like the two screenshots, "database editor's screen.png" and "main window's screen.png."
+My assumption is that it's because I made the project a few years ago on a laptop with Windows 7 and 1366x768 resolution (hints of this are in the screenshots), making things look different on Windows 10 and a display bigger than 15.6''.
+If you want to correct the misplacements for a cleaner personal use, the basic lines you need to edit are 93 and 249 from "base_window_exec.py". If the problem persists on some widgets, you'll find most of them in "base_window_widget.py"; if not there, have a look around the rest of the code - texts can guide you.
+
+
+4. Unless you have a look for educational/experimental purposes, for the program to make sense execution-wise, you'll need to have a general understanding of YGOPro (specifically the version EDOPro in our case), the Yugioh platform on which my concept is based. You can download it from their official page or their Discord server & read/watch a couple tutorials to understand it further.

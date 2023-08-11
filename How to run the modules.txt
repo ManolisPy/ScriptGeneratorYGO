@@ -1,0 +1,7 @@
+PyQt5 is required to run the modules, because some libraries are used.
+One of the simplest ways to install it is with the command:
+
+pip install PyQt5
+
+The version I used when working on the project was 5.9.x or something approximate to that.
+My Python version was 3.6.x - 3.7.x .
